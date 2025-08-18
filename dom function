@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #myButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #myButton2 {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4c56af;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #myButton3 {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #af4c4c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #myButton4 {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4cacaf;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #myButton5 {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #af4caf;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Function</title>
+</head>
+<body>
+    <h1 id=""></h1>
+    <button onclick="button1()" id="myButton">Click me</button>
+    <button onclick="button2()" id="myButton2">Click me</button>
+    <button onclick="button3()" id="myButton3">Click me</button>
+    <button onclick="button4()" id="myButton4">Click me</button>
+    <button onclick="button5()" id="myButton5">Click me</button>
+
+
+    <script>
+        a=document.getElementById("myButton");
+        function button1(){
+         document.body.style.backgroundColor = "lightblue";
+         a.innerHTML = "You clicked me!";
+         a.style.backgroundColor="#af4c4c";
+        }
+
+        function button2(){
+            var v=prompt("who are you")
+            alert("welcome "+v)
+        }
+
+        function button3(){
+            var v=confirm("are you sure?")
+            if(v==true){
+                alert("ok");
+            }
+            else{
+                alert("cancel");
+            }
+        }
+        function button4(){
+            open("https://www.example.com");
+        }
+        function button5(){
+            setTimeout(function(){
+                alert("This is a delayed alert!");
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
