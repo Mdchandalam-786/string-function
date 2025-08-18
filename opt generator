@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp Generator</title>
+    <style>
+        h3 {
+            width: 10rem;
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 15px;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+            cursor: pointer;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp Generator</title>
+</head>
+
+<body>
+
+    <h1>OTP Generator</h1>
+    <div>
+        <h3 id="otpDisplay" style="text-align: center;"></h3>
+    </div>
+    <button onclick="generateOTP()">Generate OTP</button>
+
+    <script>
+        function generateOTP(){
+            a=Math.floor(1000+Math.random()*9000)
+            document.getElementById("otpDisplay")
+            .innerHTML=a
+            
+        }
+    </script>
+</body>
+
+</html>
