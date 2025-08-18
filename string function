@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+</head>
+<body>
+<script>
+    // string function
+
+    var a="HELLO WORLD"
+    var ab="hello"
+    // var b=a.length  // define a length of string
+    // var b=a.charAt(1) // define a position of string
+    // var b=a.slice(2,5) // define a slice of string
+    // var b=a.substring(2,5) // define a substring of string
+    // var b=a.toUpperCase() // define a uppercase of string
+    // var b=a.toLowerCase() // define a lowercase of string
+    // var b=a.concat(" ",ab) // define a concat of string
+    // var b=a.trim() // define a trim of string
+    // var b=a.replace("world","chand") // define a replace of string
+    
+    document.write(b)
+    
+</script>
+</body>
+</html> 
