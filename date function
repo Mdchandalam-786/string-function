@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time Function</title>
+</head>
+
+<body>
+    <script>
+        // Date Objects
+
+        // Display current date and time
+        a = new Date();
+        console.log("Current Date and Time: " + a);
+        // alert("Current Date and Time: " + a);
+        document.write("Current Date and Time: " + a, "<br>");
+
+        b = new Date(2023, 12, 1, 10, 12, 35, 10); // Note: Months are 0-indexed (0 = January)
+        document.write("Specific Date: " + b, "<br>");
+
+        // DATE FROM STRING
+        c = new Date("2023-12-31T23:59:59");
+        document.write("Date from String: " + c, "<br>");
+
+        // Date Components
+
+        date = new Date();
+        // get year in 4 digit
+        year = date.getFullYear();
+        document.write(year, "<br>");
+
+        // get month in int
+        
+        month = date.getMonth();
+        document.write(month, "<br>");
+        // get day in int
+        
+        day = date.getDate();
+        document.write(day, "<br>");
+
+        // get hours in int
+        
+        hours = date.getHours()
+        document.write(hours, "<br>")
+
+        // get in minute in int
+        
+        minutes = date.getMinutes()
+        document.write(minutes, "<br>")
+
+        // get second in int
+        
+        seconds = date.getSeconds()
+        document.write(seconds, "<br>")
+
+        // get milliseconds in int
+
+        milliseconds = date.getMilliseconds()
+        document.write(milliseconds, "<br>")
+
+        // get week in int
+        week = date.getDay();
+        document.write("Current Weekday (0-6): " + week, "<br>");
+
+        // get date and time in utc
+        utchours = date.getUTCHours();
+        document.write("Current UTC Hours: " + utchours, "<br>");
+    </script>
+</body>
+
+</html>
