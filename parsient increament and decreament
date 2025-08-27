@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        button{
+            cursor: pointer;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form action="">
+    <input type="text" id="box1">
+    <input type="text" id="box2">
+    <button onclick=" return amit()">submit</button>
+    <p id="result"></p>
+</form>
+<!-- <h1 id="result"></h1>
+<button onclick="abc()">increase</button>
+<button onclick="def()">decrease</button> -->
+<!-- innerText
+unnerHTML
+textContent -->
+
+<script>
+    // var a=0;
+    // var b=document.getElementById("result");
+    // function abc(){
+    //     a++;
+    //     b.innerText=a;
+    //     return false;
+    //     // b.textContent=a;
+    //     // b.innerHTML=a;
+    // }
+    // function def(){
+    //     a--;
+    //     b.innerText=a;
+    //     return false;
+    // }
+    function amit(){
+        var a=document.getElementById("box1").value;
+        var b=document.getElementById("box2").value;
+        var c=parseInt(a)+parseInt(b);
+        document.getElementById("result").innerHTML=c;
+        return false;
+    }
+
+</script>
+</body>
+</html>
