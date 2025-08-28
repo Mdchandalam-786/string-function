@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    #re1{
+        color: red;
+    }
+    #re2{
+        color: blue;
+    }
+    #re3{
+        color: green;
+    }
+   </style>
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="box1">
+        <input type="text" id="box2">
+        <input type="text" id="box3">
+
+        <input type="submit" onclick=" return myFunction()">
+    </form>
+    <h1 id="re1"></h1>
+    <h1 id="re2"></h1>
+    <h1 id="re3"></h1>
+
+    <script>
+        function myFunction(){
+            var a=document.getElementById("box1").value;
+            var b=document.getElementById("box2").value;
+            var c=document.getElementById("box3").value;
+            var d=document.getElementById("re1");
+            var e=document.getElementById("re2");
+            var f=document.getElementById("re3");
+            d.innerHTML=a;
+            e.innerHTML=b;
+            f.innerHTML=c;
+            return false;
+        }
+    </script>
+</body>
+</html>
