@@ -1,5 +1,0 @@
-1. What is an API?
-At its core, an API (Application Programming Interface) is a set of rules and tools that allows different software applications to talk to each other.
-
-2. How APIs Work in JavaScript: The Key Concepts
-JavaScript uses a request-response model to work with web APIs. The most important technology for this is fetch

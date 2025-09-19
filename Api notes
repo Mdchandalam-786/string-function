@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+                         <h1>
+                            API NOTES</h1>
+                            <h2>
+  1)  what is an API? 
+  <p> At its core, an API (Application Programming Interface)
+ that allows different software 
+applications to talk to each other.</p>
+                            </h2>
+<h2>
+2) How APIs Work in JavaScript?
+<p>The Key Concepts JavaScript uses a request-response model to work with web 
+APIs. The most important technology for this is fetch(), which is a built-in 
+function that allows you to make network requests. Here’s how it works:</p>
+                            </h2>
+
+                            <h2>3)how to use api
+<p>JavaScript uses a request-response model
+ to work with web APIs. The most important technology for this is fetch, which 
+ is based on Promises and asynchronous programming
+</p>
+<p>1. The fetch() API (The Modern Way)
+The fetch() function is built into modern browsers. It provides a logical
+ way to fetch resources asynchronously across the network. It returns a
+  Promise.</p>
+ <p>2. Asynchronous Nature (Crucial!)
+API calls are network operations. They take time—milliseconds or even seconds.
+ JavaScript doesn't wait for them to finish (it's non-blocking). Instead, it 
+ uses Promises and async/await to handle the response when it's ready, without
+  freezing the webpage.</p>    
+<p>3. HTTP Methods
+The type of request you make is defined by its HTTP method:
+
+GET: Retrieve data from the server (e.g., get a list of users).
+
+POST: Send data to create a new resource (e.g., create a new user).
+
+PUT/PATCH: Update an existing resource.
+
+DELETE: Delete a resource.</p>
+
+<p>4. Request and Response
+Request: You send a request to a specific URL (the API endpoint). 
+This request can contain headers (for authentication, content type) and a body
+ (for sending data, like in a POST request).
+
+Response: The server processes your request and sends back a response.
+ This response includes:
+
+Status Code: A number like 200 (OK), 201 (Created), 404 (Not Found), 500 
+(Server Error).
+
+Headers: Information about the response.
+
+Body: The actual data you requested, usually in JSON format.
+</p>
+</h2>
+    </pre>
+</body>
+
+</html>
