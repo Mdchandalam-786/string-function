@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>browser object model</h1>
+    <h2>Window inner height and width</h2>
+    <p id="demo">Change this text.</p> 
+    <p id="demo2"></p> 
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <script>
+        document.getElementById("demo").innerHTML =
+"Browser inner window width: " + window.innerWidth + "px<br>" +
+"Browser inner window height: " + window.innerHeight + "px<br>";
+// define a web page (browser)  inner height and width in pixel
+
+document.getElementById("demo2").innerHTML = 
+"Screen width is " + screen.height+ "px<br>" +
+"Screen height is " + screen.width + "px<br>"; 
+// define a screen height and width in pixel
+
+document.getElementById("demo3").innerHTML = 
+"The full URL of this page is:<br>" + window.location.href;
+// it is create a url of the page  
+
+document.getElementById("demo4").innerHTML = 
+"Page hostname is: " + window.location.hostname;
+// it is create a hostname of the page
+
+document.getElementById("demo5").innerHTML =
+"Page path is: " + window.location.pathname;
+// it is create a path of the page
+
+document.getElementById("demo6").innerHTML =
+"The page protocol is: " + window.location.protocol;
+// it is create a protocol of the page
+
+document.getElementById("demo7").innerHTML = 
+"The URL port number of the current page is: " + window.location.port;
+// it is create a port number of the page
+
+document.getElementById("demo8").innerHTML =
+"navigator.cookieEnabled is " + navigator.cookieEnabled;
+// it is check the cookie is enabled or not
+
+document.getElementById("demo9").innerHTML =
+"navigator.language is " + navigator.language;
+    </script>
+</body>
+</html>
